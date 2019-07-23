@@ -24,7 +24,8 @@
   "scripts": {
     "mocha": "mocha",
     "test": "mocha --globals document test",
-    "test-browser": "mocha --globals document test/browser"
+    "test-browser": "mocha --globals document test/browser",
+    "build": "node ./tools/build -t all"
   },
   "engines": {
     "node": "*"
@@ -42,5 +43,10 @@
     "mocha": "^6.0.2",
     "should": "^13.2.3",
     "tiny-worker": "^2.1.2"
-  }
+  },
+  "files": [
+    "build/lib",
+    "build/styles",
+    "build/scss"
+  ]
 }
